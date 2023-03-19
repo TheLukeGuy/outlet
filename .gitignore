@@ -1,0 +1,7 @@
+# Gradle
+.gradle
+build/
+!**/src/**/build/
+
+# JetBrains IDEs
+.idea
