@@ -1,0 +1,7 @@
+name: Outlet
+version: '$version'
+main: sh.lpx.outlet.Outlet
+description: $description
+author: TheLukeGuy
+website: https://github.com/TheLukeGuy/outlet
+api-version: '1.19'
