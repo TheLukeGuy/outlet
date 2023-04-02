@@ -1,5 +1,6 @@
 plugins {
     `java-library`
+    id("io.papermc.paperweight.userdev") version "1.5.3"
     id("xyz.jpenilla.run-paper") version "2.0.1"
 }
 
@@ -9,11 +10,13 @@ description = "A modern plugin manager for Paper."
 
 repositories {
     mavenCentral()
-    maven("https://repo.papermc.io/repository/maven-public/")
 }
 
 dependencies {
-    compileOnly("io.papermc.paper:paper-api:1.19.4-R0.1-SNAPSHOT")
+    paperweight {
+        paperDevBundle("1.19.4-R0.1-SNAPSHOT")
+    }
+    compileOnly("org.jetbrains:annotations:24.0.1")
 }
 
 java {
@@ -23,6 +26,10 @@ java {
 }
 
 tasks {
+    assemble {
+        dependsOn(reobfJar)
+    }
+
     processResources {
         val properties = mapOf("version" to project.version, "description" to project.description)
         inputs.properties(properties)
