@@ -1,7 +1,9 @@
 name: Outlet
 version: '$version'
-main: sh.lpx.outlet.Outlet
 description: $description
 author: TheLukeGuy
 website: https://github.com/TheLukeGuy/outlet
 api-version: '1.19'
+
+main: sh.lpx.outlet.OutletPlugin
+bootstrapper: sh.lpx.outlet.OutletBootstrap
