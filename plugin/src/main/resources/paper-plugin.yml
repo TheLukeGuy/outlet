@@ -1,4 +1,4 @@
-name: Outlet
+name: $name
 version: '$version'
 description: $description
 author: TheLukeGuy
