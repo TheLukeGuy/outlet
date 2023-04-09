@@ -1,3 +1,3 @@
 rootProject.name = "outlet"
 
-include("plugin")
+include("plugin", "legacy")

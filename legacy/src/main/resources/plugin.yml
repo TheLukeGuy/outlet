@@ -1,0 +1,10 @@
+name: $name
+version: '$version'
+description: $description
+author: TheLukeGuy
+website: https://github.com/TheLukeGuy/outlet
+
+main: sh.lpx.outlet.legacy.LegacyPlugin
+
+api-version: '1.17'
+folia-supported: true
