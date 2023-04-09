@@ -3,6 +3,7 @@ plugins {
     id("sh.lpx.outlet.shadow-conventions")
 }
 
+val pluginName: String by project
 val minecraftVersion: String by project
 
 repositories {
@@ -18,5 +19,14 @@ dependencies {
 tasks {
     runServer {
         minecraftVersion(minecraftVersion)
+    }
+
+    jar {
+        archiveClassifier.set("original")
+    }
+
+    shadowJar {
+        archiveBaseName.set(pluginName)
+        archiveClassifier.set("")
     }
 }
