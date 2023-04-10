@@ -1,4 +1,3 @@
 package sh.lpx.outlet.storage;
 
-public interface Storage {
-}
+public interface Storage {}

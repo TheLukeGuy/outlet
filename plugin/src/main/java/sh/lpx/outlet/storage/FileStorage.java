@@ -6,7 +6,9 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
-public class FileStorage implements Storage {
+public class FileStorage
+    implements Storage
+{
     private final @NotNull Path dir;
 
     private FileStorage(@NotNull Path dir) {

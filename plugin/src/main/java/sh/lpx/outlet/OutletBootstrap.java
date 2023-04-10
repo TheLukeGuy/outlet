@@ -7,7 +7,9 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 @SuppressWarnings("UnstableApiUsage")
-public class OutletBootstrap implements PluginBootstrap {
+public class OutletBootstrap
+    implements PluginBootstrap
+{
     private @Nullable Outlet outlet = null;
 
     @Override
